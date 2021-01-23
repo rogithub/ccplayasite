@@ -20,6 +20,14 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <style>
+        #main-content {
+            padding-top: 100px;
+        }
+
+        article {
+            padding-top: 40px;
+        }
+
         body {
             background-color: #f5e7d3;
         }
@@ -27,6 +35,10 @@
         header {
             background-color: white;
             border: 1px solid #748a6a;
+        }
+
+        a.navbar-brand {
+            color: #748a6a;
         }
 
         h1,
@@ -44,12 +56,49 @@
 </head>
 
 
-<div class="container mb-3">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#main-content" style="color:#748a6a">
+            Confecciones Colombia
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#decoracion">Decoración</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tapiceria">Tapicería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cojineria">Cojinería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hoteleria">Hotelería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bares">Bares & Restaurantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#colchonetas">Colchonetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fundas">Fundas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mb-3" id="main-content">
     <div class="logo">
         <img src="logo/logo.png" width="250px" height="300px" alt="logo">
     </div>
 
-    <section>
+    <section id="header">
         <header class="p-5 mt-3 rounded">
             <h1>
                 Confecciones Colombia
@@ -87,215 +136,230 @@
         </header>
     </section>
 
-    <h2>
-        Decoración y asesoría
-    </h2>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/decoracion/estilo.jpeg" class="card-img-top" alt="estilo">
-                <div class="card-body">
-                    <h5 class="card-title">Estilo</h5>
+    <article id="decoracion">
+        <h2>
+            Decoración y asesoría
+        </h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/decoracion/estilo.jpeg" class="card-img-top" alt="estilo">
+                    <div class="card-body">
+                        <h5 class="card-title">Estilo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/decoracion/exterior.jpeg" class="card-img-top" alt="deco exterior">
+                    <div class="card-body">
+                        <h5 class="card-title">Asesoría personalizada</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/decoracion/piscina.jpeg" class="card-img-top" alt="atencion">
+                    <div class="card-body">
+                        <h5 class="card-title">Atención al detalle</h5>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/decoracion/exterior.jpeg" class="card-img-top" alt="deco exterior">
-                <div class="card-body">
-                    <h5 class="card-title">Asesoría personalizada</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/decoracion/piscina.jpeg" class="card-img-top" alt="atencion">
-                <div class="card-body">
-                    <h5 class="card-title">Atención al detalle</h5>
-                </div>
-            </div>
-        </div>
-    </div>
+    </article>
 
-    <h2>
-        Tapicería
-    </h2>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/tapiceria/nautica.png" class="card-img-top" alt="nautica">
-                <div class="card-body">
-                    <h5 class="card-title">Naútica</h5>
+    <article id="tapiceria">
+        <h2>
+            Tapicería
+        </h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/tapiceria/nautica.png" class="card-img-top" alt="nautica">
+                    <div class="card-body">
+                        <h5 class="card-title">Naútica</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/tapiceria/automotriz.jpeg" class="card-img-top" alt="automotriz">
+                    <div class="card-body">
+                        <h5 class="card-title">Automotriz</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/tapiceria/comercial.jpeg" class="card-img-top" alt="comercial">
+                    <div class="card-body">
+                        <h5 class="card-title">Comercial</h5>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/tapiceria/automotriz.jpeg" class="card-img-top" alt="automotriz">
-                <div class="card-body">
-                    <h5 class="card-title">Automotriz</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/tapiceria/comercial.jpeg" class="card-img-top" alt="comercial">
-                <div class="card-body">
-                    <h5 class="card-title">Comercial</h5>
-                </div>
-            </div>
-        </div>
-    </div>
+    </article>
 
-    <h2>
-        Cojinería
-    </h2>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/cojineria/interior.jpg" class="card-img-top" alt="interiores">
-                <div class="card-body">
-                    <h5 class="card-title">Interior</h5>
+    <article id="cojineria">
+        <h2>
+            Cojinería
+        </h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/cojineria/interior.jpg" class="card-img-top" alt="interiores">
+                    <div class="card-body">
+                        <h5 class="card-title">Interior</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/cojineria/playa1.jpeg" class="card-img-top" alt="de-playa">
+                    <div class="card-body">
+                        <h5 class="card-title">De playa</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/cojineria/toldos.jpeg" class="card-img-top" alt="toldos">
+                    <div class="card-body">
+                        <h5 class="card-title">Toldos y camastros</h5>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/cojineria/playa1.jpeg" class="card-img-top" alt="de-playa">
-                <div class="card-body">
-                    <h5 class="card-title">De playa</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/cojineria/toldos.jpeg" class="card-img-top" alt="toldos">
-                <div class="card-body">
-                    <h5 class="card-title">Toldos y camastros</h5>
-                </div>
-            </div>
-        </div>
-    </div>
+    </article>
 
-    <h2>
-        Residencial y hotelería
-    </h2>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/residencial/camastro.jpeg" class="card-img-top" alt="piscina">
-                <div class="card-body">
-                    <h5 class="card-title">Cojines para muebles de piscina</h5>
+    <article id="hoteleria">
+        <h2>
+            Residencial y hotelería
+        </h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/residencial/camastro.jpeg" class="card-img-top" alt="piscina">
+                    <div class="card-body">
+                        <h5 class="card-title">Cojines para muebles de piscina</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/residencial/sabana.jpeg" class="card-img-top" alt="sabana">
+                    <div class="card-body">
+                        <h5 class="card-title">Sábanas, toallas, batas de baño, blancos.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/residencial/cortinas.jpeg" class="card-img-top" alt="cortinas">
+                    <div class="card-body">
+                        <h5 class="card-title">Cortinas y blackouts</h5>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/residencial/sabana.jpeg" class="card-img-top" alt="sabana">
-                <div class="card-body">
-                    <h5 class="card-title">Sábanas, toallas, batas de baño, blancos.</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/residencial/cortinas.jpeg" class="card-img-top" alt="cortinas">
-                <div class="card-body">
-                    <h5 class="card-title">Cortinas y blackouts</h5>
-                </div>
-            </div>
-        </div>
-    </div>
+    </article>
 
-    <h2>
-        Bares y restaurantes
-    </h2>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/restaurant/manteleria.jpg" class="card-img-top" alt="manteleria">
-                <div class="card-body">
-                    <h5 class="card-title">Mantelería</h5>
+    <article id="bares">
+        <h2>
+            Bares y restaurantes
+        </h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/restaurant/manteleria.jpg" class="card-img-top" alt="manteleria">
+                    <div class="card-body">
+                        <h5 class="card-title">Mantelería</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/restaurant/mesa.jpeg" class="card-img-top" alt="mesa">
+                    <div class="card-body">
+                        <h5 class="card-title">Personalización de sillas y mesas de restaurant</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/restaurant/sillon.jpeg" class="card-img-top" alt="tapiceriarestaurantera">
+                    <div class="card-body">
+                        <h5 class="card-title">Tapicería de sillas y sillones de bares y restaurantes</h5>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/restaurant/mesa.jpeg" class="card-img-top" alt="mesa">
-                <div class="card-body">
-                    <h5 class="card-title">Personalización de sillas y mesas de restaurant</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/restaurant/sillon.jpeg" class="card-img-top" alt="tapiceriarestaurantera">
-                <div class="card-body">
-                    <h5 class="card-title">Tapicería de sillas y sillones de bares y restaurantes</h5>
-                </div>
-            </div>
-        </div>
-    </div>
+    </article>
 
-    <h2>
-        Colchonetas
-    </h2>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/otros/gym.jpeg" class="card-img-top" alt="gym">
-                <div class="card-body">
-                    <h5 class="card-title">Diseño de gimnacios infantiles</h5>
+    <article id="colchonetas">
+        <h2>
+            Colchonetas
+        </h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/otros/gym.jpeg" class="card-img-top" alt="gym">
+                    <div class="card-body">
+                        <h5 class="card-title">Diseño de gimnacios infantiles</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/otros/rehab.jpeg" class="card-img-top" alt="rehab">
+                    <div class="card-body">
+                        <h5 class="card-title">Tapicería, colchonetas y cortinería médica y de rehabilitación</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/otros/toldo.jpeg" class="card-img-top" alt="toldos">
+                    <div class="card-body">
+                        <h5 class="card-title">Toldos en lonas y telas sintéticas</h5>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/otros/rehab.jpeg" class="card-img-top" alt="rehab">
-                <div class="card-body">
-                    <h5 class="card-title">Tapicería, colchonetas y cortinería médica y de rehabilitación</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/otros/toldo.jpeg" class="card-img-top" alt="toldos">
-                <div class="card-body">
-                    <h5 class="card-title">Toldos en lonas y telas sintéticas</h5>
-                </div>
-            </div>
-        </div>
-    </div>
+    </article>
 
-    <h2>
-        Cubiertas y fundas
-    </h2>
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/fundas/bote.jpeg" class="card-img-top" alt="bote">
-                <div class="card-body">
-                    <h5 class="card-title">Embarcaciones y vehículos</h5>
+    <article id="fundas">
+        <h2>
+            Cubiertas y fundas
+        </h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/fundas/bote.jpeg" class="card-img-top" alt="bote">
+                    <div class="card-body">
+                        <h5 class="card-title">Embarcaciones y vehículos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/fundas/motor.jpeg" class="card-img-top" alt="motor">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundas a la medida</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="fotos/fundas/piscina.jpeg" class="card-img-top" alt="piscina">
+                    <div class="card-body">
+                        <h5 class="card-title">Cubiertas para piscina</h5>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/fundas/motor.jpeg" class="card-img-top" alt="motor">
-                <div class="card-body">
-                    <h5 class="card-title">Fundas a la medida</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <img src="fotos/fundas/piscina.jpeg" class="card-img-top" alt="piscina">
-                <div class="card-body">
-                    <h5 class="card-title">Cubiertas para piscina</h5>
-                </div>
-            </div>
-        </div>
-    </div>
+    </article>
+
 </div>
 
 <body>
